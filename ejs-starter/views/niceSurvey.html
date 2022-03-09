@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <title>Questionnaire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+
+    <!-- <script src="scripts/service.js"></script> -->
+    <!-- Your own additional style sheet -->
+     <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- <link href="styles/style.css" rel="stylesheet" type="text/css"> -->
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+  </head>
+  
+  <body>
+	
+	<div class="container-md p-3 my-3 border bg-dark text-white" id="survey">
+    <h1>Survey</h1>
+    <br>
+    <form>
+        <h2 style="font-family:verdana" > Evaluate our website! </h2>
+        <body>
+          <a href="https://www.youtube.com">
+          <img src="a.JPG" alt = "https://www.youtube.com" width="1100" height="700" class="img-rounded"/></a>
+        </body>
+        <br>
+        <br>
+        <h2> How do you like this website? </h2>
+        I like:<br>
+        <input type="text" name="webpage" placeholder="content, layout, ..." required />
+        <br>
+        <br>
+        <h2> How is your experience using this website?</h2>
+        
+        <input type="radio" name="experience" value="Pleasant"> Pleasant<br>
+        <input type="radio" name="experience" value="Satisfiable"> Generally satisfiable<br>
+        <input type="radio" name="experience" value="Bad"> Bad<br>
+        <input type="radio" name="experience" value="Terrible"> Terrible<br>
+        
+        <br>
+        <h2> What is your favorite channel?</h2>
+        <select name="favorite">
+          <option value="Sports" selected="selected">Sports</option>
+          <option value="Pets">Animals and Pets</option>
+          <option value="Musics">Musics</option>
+          <option value="Fashion">Fashion</option>
+          <option value="Films">Highlight Films</option>
+        </select>
+
+        <br>
+        <br>
+
+        <h2> Woudl you recommend this website to others?</h2>
+          <input type="radio" name="recommend" value="yes">Yes<br>
+          <input type="radio" name="recommend" value="no">No<br>
+        <br>  
+        <h2>Where do you think the website needs improvement on?</h2>
+          <input type="checkbox" name="improve" value="content"> Content<br>
+          <input type="checkbox" name="improve" value="teenagerRestriction"> Teenager Restriction<br>
+          <input type="checkbox" name="improve" value="design"> Design of the website<br>
+        <br>
+        <br>
+        <h2> What is your gender?</h2>
+        <select name="gender">
+          <option value="notoTell" selected="selected">Prefer not to tell</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+        <br>
+        <br>
+      <button type="submit" class="btn btn-warning" id="bb">
+        <span class="glyphicon glyphicon-ok"></span> Submit
+      </button>
+      <p id="thanks"></p>
+      <p id="signature">Site created by Group 11</p>  
+    </form>
+    </div>
+	<script src="/assets/action.js"></script>
+
+  </body>
+</html> 

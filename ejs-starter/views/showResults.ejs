@@ -1,0 +1,45 @@
+<html lang="en-US">
+<head>
+    <title>Survey Analysis</title>
+</head>
+
+<body>
+    <h1>Survey analysis</h1>
+    <h2>Like the website about: </h2>
+    <ul>
+    <% for (var i=0; i<results[0].length; i++){ %>
+        <li><%= results[0][i].webpage %> :  <%= results[0][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>User experience of the website</h2>
+    <ul>
+    <% for (var i=0; i<results[1].length; i++){ %>
+        <li><%= results[1][i].experience %> :  <%= results[1][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Favorite Channel</h2>
+    <ul>
+    <% for (var i=0; i<results[2].length; i++){ %>
+        <li><%= results[2][i].favorite %> :  <%= results[2][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Recommend to others</h2>
+    <ul>
+    <% for (var i=0; i<results[3].length; i++){ %>
+        <li><%= results[3][i].recommend %> :  <%= results[3][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Improve on: </h2>
+    <ul>
+    <% for (var i=0; i<results[4].length; i++){ %>
+        <li><%= results[4][i].improve %> :  <%= results[4][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Gender of the survey-taker</h2>
+    <ul>
+    <% for (var i=0; i<results[5].length; i++){ %>
+        <li><%= results[5][i].gender %> :  <%= results[5][i].count %></li>
+    <% } %>    
+    </ul>
+</body>
+</html>
